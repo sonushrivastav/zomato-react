@@ -3,6 +3,9 @@ import "./home.css"
 import Header from '../../components/header/Header'
 import TabSections from '../../components/tabsection/TabSections'
 import Footer from '../../components/footer/Footer'
+import Delivery from '../../components/deliverytab/Delivery'
+import DinningOut from '../../components/dinningouttab/DinningOut'
+import NightLife from '../../components/nightlifetab/NightLife'
 
 const Home = () => {
   const [activeTab,setActiveTab]=useState("Nightlife")
@@ -10,19 +13,19 @@ const Home = () => {
   const getCorrectScreen = (tab) => {
     switch (tab) {
       case "Delivery":
-        return <div>Delivery</div>;
+        return <Delivery/>;
       case "Dinning Out":
-        return <div>Dinning Out</div>;
+        return <DinningOut/>;
       case "Nightlife":
-        return <div>Nightlife</div>;
+        return <NightLife/>;
       default:
-        return <div>Delivery</div>
+        return <Delivery/>
     }
   }
   return (
     <div>
       <Header />
-      <TabSections />
+      <TabSections activeTab={activeTab} setActiveTab={ setActiveTab} />
       {getCorrectScreen(activeTab)}
       <Footer/>
     </div>
