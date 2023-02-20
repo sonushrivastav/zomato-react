@@ -22,6 +22,7 @@ const Header = () => {
           <div className="location_separate"></div>
           <div className="searchbar">
             <i className="fi fi-rr-search search_icon"></i>
+            <input type="text" className="search_input" placeholder="Search for  estaurant, cuisine or a dish"/>
           </div>
         </div>
       </div>
