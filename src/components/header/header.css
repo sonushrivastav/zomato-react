@@ -5,5 +5,7 @@
     margin-bottom: 12px;
 }
 .header_logo{
-    
+    height: 27px;
+    max-width: 140px;
+    margin-right: 24px;
 }
