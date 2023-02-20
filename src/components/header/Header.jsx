@@ -14,10 +14,14 @@ const Header = () => {
         <div className="search_container">
           <div className="location_wrapper">
             <div className="location_icon">
-              <i className="fi fi-rr-marker icon_loation"></i>
+              <i className="fi fi-rr-marker absolute_center icon_loation"></i>
               <div>Banglore</div>
             </div>
             <i className="fi fi-rr-caret-down absolute_center"></i>
+          </div>
+          <div className="location_separate"></div>
+          <div className="searchbar">
+            <i className="fi fi-rr-search search_icon"></i>
           </div>
         </div>
       </div>

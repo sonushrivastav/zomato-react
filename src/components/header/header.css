@@ -46,3 +46,8 @@
     font-size: 20px;
     margin-right: 8px;
 }
+
+.location_separate{
+    height: 20px;
+    border: 0.5px solid rgb(207, 207,207);
+}
