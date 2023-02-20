@@ -9,3 +9,40 @@
     max-width: 140px;
     margin-right: 24px;
 }
+
+.header_left{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.search_container{
+    height: 54px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: rgb(28,28,28/ 8%) 0px 2px 8px;
+    border: 1px solid rgb(232,232,232);
+    width: 70%;
+    background-color: rgb(255,255,255);
+}
+
+.location_wrapper{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.location_icon{
+    display: flex;
+    color: #828282;
+}
+
+.icon_loation{
+    color: #ff7e8b;
+    font-size: 20px;
+    margin-right: 8px;
+}

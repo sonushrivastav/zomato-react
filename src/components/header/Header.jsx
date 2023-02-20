@@ -14,7 +14,7 @@ const Header = () => {
         <div className="search_container">
           <div className="location_wrapper">
             <div className="location_icon">
-              <i className="fi fi-rr-marker"></i>
+              <i className="fi fi-rr-marker icon_loation"></i>
               <div>Banglore</div>
             </div>
             <i className="fi fi-rr-caret-down absolute_center"></i>
