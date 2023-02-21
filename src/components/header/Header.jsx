@@ -25,6 +25,11 @@ const Header = () => {
             <input type="text" className="search_input" placeholder="Search for  estaurant, cuisine or a dish"/>
           </div>
         </div>
+        <div className="profile-viewer">
+          <img className="header_profile" src="https://b.zmtcdn.com/images/user_avatars/mug_2x.png?fit=around%7C100%3A100&crop=100%3A100%3B%2A%2C%2A" alt="profile.png" />
+          <span className="header_username">Sonu</span>
+          <i className="fi fi-rr-angle-small-down absolute_center profile_icon"></i>
+        </div>
       </div>
     </div>
   );
