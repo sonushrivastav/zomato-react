@@ -1,7 +1,9 @@
 import React from "react";
 import "./tabsections.css";
+
+
 const TabSections = ({ activetab, setActiveTab }) => {
-  const tabArray = [
+  const tabs = [
     {
       id: 1,
       name: "Delivery",
@@ -13,7 +15,7 @@ const TabSections = ({ activetab, setActiveTab }) => {
     },
     {
       id: 2,
-      name: "Dinning Out",
+      name: "Dining Out",
       active_img:
         "https://b.zmtcdn.com/data/o2_assets/30fa0a844f3ba82073e5f78c65c18b371616149662.png",
       backdrop: "#E5F3F3",
@@ -34,13 +36,13 @@ const TabSections = ({ activetab, setActiveTab }) => {
   return (
     <div className="tab_options">
       <div className="max_width options_wrapper">
-        {tabArray?.map((tab) => {
-          return (
+        {tabs?.map((tab) => (
             <div
-              onClick={() => setActiveTab(tab?.name)}
+              onClick={() => setActiveTab(tab.name)}
               className={`tab_item absolute_center ${
                 activetab === tab?.name && "active_tab"
-              }`}
+                }`}
+              style={{cursor:"pointer"}}
             >
               <div
                 className="tab_image_container absolute_center"
@@ -51,19 +53,16 @@ const TabSections = ({ activetab, setActiveTab }) => {
                 }}
               >
                 <img
-                  src={
-                    activetab === tab?.name
-                      ? tab.active_img
-                      : tab.inactive_img
+                  src={activetab === tab.name ? tab.active_img : tab.inactive_img
                   }
                   className="tab_image"
-                  alt={tab?.name}
+                  alt={tab.name}
                 />
               </div>
               <div className="tab_name">{ tab?.name}</div>
             </div>
-          );
-        })}
+          )
+        )}
       </div>
     </div>
   );
