@@ -8,7 +8,7 @@ import DinningOut from '../../components/dinningouttab/DinningOut'
 import NightLife from '../../components/nightlifetab/NightLife'
 
 const Home = () => {
-  const [activeTab,setActiveTab]=useState("")
+  const [activeTab,setActiveTab]=useState("Delivery")
 
   const getCorrectScreen = (tab) => {
     switch (tab) {

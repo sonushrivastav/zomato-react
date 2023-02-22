@@ -2,7 +2,7 @@ import React from "react";
 import "./tabsections.css";
 
 
-const TabSections = ({ activetab, setActiveTab }) => {
+const TabSections = ({ activeTab, setActiveTab }) => {
   const tabs = [
     {
       id: 1,
@@ -40,7 +40,7 @@ const TabSections = ({ activetab, setActiveTab }) => {
             <div
               onClick={() => setActiveTab(tab.name)}
               className={`tab_item absolute_center ${
-                activetab === tab?.name && "active_tab"
+                activeTab === tab?.name && "active_tab"
                 }`}
               style={{cursor:"pointer"}}
             >
@@ -48,12 +48,12 @@ const TabSections = ({ activetab, setActiveTab }) => {
                 className="tab_image_container absolute_center"
                 style={{
                   backgroundColor: `${
-                    activetab === tab?.name ? tab?.backdrop : ""
+                    activeTab === tab?.name ? tab?.backdrop : ""
                   }`,
                 }}
               >
                 <img
-                  src={activetab === tab.name ? tab.active_img : tab.inactive_img
+                  src={activeTab === tab.name ? tab.active_img : tab.inactive_img
                   }
                   className="tab_image"
                   alt={tab.name}
