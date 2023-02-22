@@ -8,3 +8,10 @@
   align-items: center;
   justify-content: center;
 }
+
+.collection_title{
+  font-size: 30px;
+  color: #1c1c1c;
+  margin-bottom: 500;
+  font-weight: 500;
+}
