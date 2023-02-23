@@ -1,5 +1,9 @@
 import React from 'react'
-import "./deliverycollection.css"
+import Slider from 'react-slick';
+import NextArrow from '../../carousel/nextArrow';
+import PrevArrow from '../../carousel/prevArrow';
+import "./deliverycollection.css";
+
 const DeliveryCollection = () => {
     const deliveryItems = [
         {
@@ -68,13 +72,31 @@ const DeliveryCollection = () => {
           cover:
             "https://b.zmtcdn.com/data/homepage_dish_data/4/f06d9a57b0847677e36f163a7b7fe54a.png",
         },
-      ];
+    ];
+  
+  const settings = {
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow:<NextArrow/>,
+    prevArrow:<PrevArrow/>
+    
+  }
   return (
     <>
           <div className='delivery_collection'>
               <div className='max_width'>
                   <div className='collection_title'>Eat what makes you happy</div>
+          <Slider {...settings}>
+            {
+              deliveryItems?.map((item) => {
+                return <span>{ item?.title}</span>
+              })
+          }
+            
+                  </Slider>
               </div>
+
      </div> 
     </>
   )

@@ -1,10 +1,22 @@
 import React from 'react'
 
-const prevArrow = () => {
+const prevArrow = ({ props }) => {
+  const { className, style, onClick } = props;
+  
   return (
-    <div>
-      
-    </div>
+    <div
+      className={className}
+      style={{
+        ...style,
+        background: "white",
+        borderRadius: "50%",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "4px",
+      }}
+      onClick={onClick}
+    ></div>
   )
 }
 
