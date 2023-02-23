@@ -16,7 +16,9 @@
   font-weight: 600;
 }
 
-.slick_next::before,
-.slick_prev::before{
-  color: rgb(168, 96, 96);
+.slick-next::before,
+.slick-prev::before{
+  color: rgb(238, 80, 80);
+  font-size: 25px;
+  
 }
