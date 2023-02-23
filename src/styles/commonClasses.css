@@ -12,6 +12,11 @@
 .collection_title{
   font-size: 30px;
   color: #1c1c1c;
-  margin-bottom: 500;
-  font-weight: 500;
+  margin-bottom: 32px;
+  font-weight: 600;
+}
+
+.slick_next::before,
+.slick_prev::before{
+  color: rgb(168, 96, 96);
 }
