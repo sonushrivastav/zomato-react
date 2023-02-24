@@ -11,10 +11,13 @@ const ExploreCard = ({ restaurant }) => {
     const bottomContainers = restaurant?.bottomContainers;
     const goldOff = restaurant?.gold?.text
     const proOff  = offers.length > 1 ? offers[0].text : null
-    
+    const discount = offers.length> 1 ?offers[1].text : offers.length ===1 ? offers[0].text : null
+
   return (
-    <div>
-      explorecard section
+    <div className='explore_card' style={{cursor:"pointer"}}>
+          <div className='explore_card_cover'>
+              <img src={coverImg} alt={name} className="expore_card_image"/>
+      </div>
     </div>
   )
 }
