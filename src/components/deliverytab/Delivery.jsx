@@ -2,6 +2,7 @@ import React from 'react'
 import Filter from '../filters/Filter'
 import "./delivery.css"
 import DeliveryCollection from './deliverycollection/DeliveryCollection'
+import ExploreSection from './exploresection/ExploreSection'
 import TopBrands from './topBrands/TopBrands'
 const Delivery = () => {
   const deliveryFilter = [
@@ -38,7 +39,8 @@ const Delivery = () => {
         <Filter filterlist={ deliveryFilter} />
       </div>
       <DeliveryCollection />
-      <TopBrands/>
+      <TopBrands />
+      <ExploreSection/>
     </>
   )
 }

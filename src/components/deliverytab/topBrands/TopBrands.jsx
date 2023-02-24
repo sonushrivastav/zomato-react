@@ -63,7 +63,7 @@ const TopBrands = () => {
 
   const settings = {
     infinite: false,
-    slideToShow: 6,
+    slidesToShow: 6,
     slidesToScroll: 1,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
