@@ -17,6 +17,10 @@ const ExploreCard = ({ restaurant }) => {
     <div className='explore_card' style={{cursor:"pointer"}}>
           <div className='explore_card_cover'>
               <img src={coverImg} alt={name} className="expore_card_image"/>
+              <div className='deliverytime'>{ deliveryTime}</div>
+              {proOff && <div className='pro_off'>{ proOff}</div> }
+              {goldOff && <div className='gold_off absolute_center'>{ goldOff}</div> }
+              {discount && <div className='discount absolute_center'>{ discount}</div> }
       </div>
     </div>
   )

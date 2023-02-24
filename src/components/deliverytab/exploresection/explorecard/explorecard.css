@@ -18,3 +18,64 @@
     object-fit: cover;
     border-radius: 15px;
 }
+
+.deliverytime{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    opacity: .8;
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: blur(4px);
+    font-weight: 600;
+    font-size: 12px;
+    padding: 2px 5px 3px;
+    border-radius: 4px;
+}
+
+.pro_off{
+    position: absolute;
+    left: 0px;
+    bottom: 40px;
+    background-color: #d92662;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 0px 6px;
+    border-radius: 0px 2px 2px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.discount{
+    position: absolute;
+    left: 0px;
+    bottom: 14px;
+    background-color: #256fef;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 0px 6px;
+    border-radius: 0px 2px 2px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+.gold_off{
+    position: absolute;
+    left: 0px;
+    bottom: 14px;
+    background-color: #d92662;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    padding: 0px 6px;
+    border-radius: 0px 2px 2px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 18px;
+    font-weight: 500;
+}
