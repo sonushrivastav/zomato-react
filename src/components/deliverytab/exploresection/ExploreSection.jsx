@@ -10,7 +10,7 @@ const ExploreSection = ({list,collectionName}) => {
           <div className='explore_grid'>
           {
               list?.map((restaurant) => {
-                  return <ExploreCard/>
+                  return <ExploreCard restaurant={ restaurant} />
               })
           }
               

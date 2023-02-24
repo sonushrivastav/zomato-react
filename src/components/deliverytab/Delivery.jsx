@@ -1,7 +1,7 @@
 import React from 'react'
 import Filter from '../filters/Filter'
 import "./delivery.css"
-import {restaurant} from "../../apidata/restaurant"
+import {restaurants} from "../../apidata/restaurant"
 import DeliveryCollection from './deliverycollection/DeliveryCollection'
 import ExploreSection from './exploresection/ExploreSection'
 import TopBrands from './topBrands/TopBrands'
@@ -35,7 +35,7 @@ const Delivery = () => {
     },
   ]
 
-  const restuarantLists =restaurant
+  const restuarantLists = restaurants
 
   return (
     <>
