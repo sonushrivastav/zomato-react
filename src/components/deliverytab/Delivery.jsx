@@ -1,6 +1,7 @@
 import React from 'react'
 import Filter from '../filters/Filter'
 import "./delivery.css"
+import {restaurant} from "../../apidata/restaurant"
 import DeliveryCollection from './deliverycollection/DeliveryCollection'
 import ExploreSection from './exploresection/ExploreSection'
 import TopBrands from './topBrands/TopBrands'
@@ -33,6 +34,9 @@ const Delivery = () => {
       title: "Great Offers",
     },
   ]
+
+  const restuarantLists =restaurant
+
   return (
     <>
       <div className='max_width'>
@@ -40,7 +44,7 @@ const Delivery = () => {
       </div>
       <DeliveryCollection />
       <TopBrands />
-      <ExploreSection/>
+      <ExploreSection list={ restuarantLists} collectionName="Delivery Restaurants in Banglore" />
     </>
   )
 }
