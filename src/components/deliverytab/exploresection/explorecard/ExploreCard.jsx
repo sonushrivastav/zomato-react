@@ -48,23 +48,23 @@ const ExploreCard = ({ restaurant }) => {
                 </span>
               );
             })}
-            {
-              approxPrice && <div className="approx_price">{ approxPrice}</div>
-            }
           </div>
         )}
+        {approxPrice && <div className="res_price">{approxPrice}</div>}
       </div>
-      {
-        bottomContainers.length > 0 && (
-          <div>
-            <div></div>
-            <div>
-              <img style={{height:"18px"}} src={bottomContainers[0]?.image?.url} alt={bottomContainers[0]?.text} />
-              <div className="res_bottom_text">{ bottomContainers[0]?.text}</div>
-            </div>
+      {bottomContainers.length > 0 && (
+        <div>
+          <div className="card_separator"></div>
+          <div className="explore_bottom">
+            <img
+              style={{ height: "18px" }}
+              src={bottomContainers[0]?.image?.url}
+              alt={bottomContainers[0]?.text}
+            />
+            <div className="res_bottom_text">{bottomContainers[0]?.text}</div>
           </div>
-        )
-      }
+        </div>
+      )}
     </div>
   );
 };

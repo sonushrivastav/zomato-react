@@ -79,3 +79,78 @@
     line-height: 18px;
     font-weight: 500;
 }
+.res_row{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px 6px;
+}
+
+.res_name{
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.res_rating{
+    padding: 0px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: #24963f;
+    border-radius: 6px;
+    height: 24px;
+}
+
+.res_rating i{
+    font-size: 10px;
+    margin-left: 2px;
+}
+
+.res_cuisine{
+    max-width: 56%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.res_cuisine_tag{
+    margin-right: 4px;
+    color: #696969;
+}
+
+.res_price{
+    font-size: 14px;
+    color: #696969;
+}
+
+
+.explore_bottom{
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+
+}
+
+.card_separator{
+    height: 1px;
+    margin: 10px 0px 5px;
+    background-color: rgb(232, 232, 232);
+}
+
+.res_bottom_text{
+    font-size: 12px;
+    color: #696969;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 8px;
+}
+
+.explore_card:hover{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+}
