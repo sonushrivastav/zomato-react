@@ -32,7 +32,8 @@ const TabSections = ({ activeTab, setActiveTab }) => {
         "https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png",
     },
   ];
-
+ 
+   
   return (
     <div className="tab_options">
       <div className="max_width options_wrapper">
