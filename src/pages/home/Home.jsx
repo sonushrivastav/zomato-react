@@ -6,6 +6,7 @@ import Footer from '../../components/footer/Footer'
 import Delivery from '../../components/deliverytab/Delivery'
 import DinningOut from '../../components/dinningouttab/DinningOut'
 import NightLife from '../../components/nightlifetab/NightLife'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
 
 const Home = () => {
   const [activeTab,setActiveTab]=useState("Delivery")
@@ -16,7 +17,14 @@ const Home = () => {
       <Header />
       <TabSections activeTab={activeTab} setActiveTab={setActiveTab} />
       {getCorrectScreen(activeTab)}
-      <Footer/>
+      <Footer />
+      
+      <Routes>
+        <Route path='/Delivery' element={ <Delivery/>} />
+        <Route path='/Dining Out' element={ <DinningOut/>} />
+        <Route path='/Nightlife' element={ <NightLife/>} />
+     </Routes>
+
     </div>
   )
 }
